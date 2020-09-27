@@ -9,6 +9,7 @@ metadata:
     heritage: {{ .Release.Service }}
     testsync: helloworld
     hello: world
+    john: doe
 spec:
   replicas: {{ .Values.replicaCount }}
   revisionHistoryLimit: 3
