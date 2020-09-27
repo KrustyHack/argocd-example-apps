@@ -7,9 +7,6 @@ metadata:
     chart: {{ template "helm-guestbook.chart" . }}
     release: {{ .Release.Name }}
     heritage: {{ .Release.Service }}
-    testsync: helloworld
-    hello: world
-    john: doe
 spec:
   replicas: {{ .Values.replicaCount }}
   revisionHistoryLimit: 3
